@@ -1,13 +1,19 @@
 .center{
     text-align: center;
 }
-table,td,th{
+table,th{
+    border-collapse:collapse;
+    padding: 20px;
+    align-items: center;
+}
+td{
     border-collapse:collapse;
     padding: 20px;
     align-items: center;
 }
 body{
     border: 4px;
+    padding: 5px;
 }
 th{
     background-color:rgb(197, 197, 197);
@@ -15,3 +21,5 @@ th{
 tr:hover {
     background-color:whitesmoke;
 }
+
+
