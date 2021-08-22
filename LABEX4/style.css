@@ -1,0 +1,309 @@
+.navbar{
+    background-color: #2874f0 !important;
+    border-radius: 0%;
+    padding: 0%;
+    border: 0ch !important;
+}
+.container{
+    padding: 0%;
+}
+.navbar-brand img{
+    width: 75px;
+    height: 20px;
+}
+nav li a {
+    color: rgb(255, 255, 255) !important;
+    font-size: 19px;
+    font-weight: 400;
+    position: relative;
+}
+.dropdown-menu a{
+    color: rgb(0, 0, 0) !important;
+    font-size: 13px;
+    line-height: 18px;
+    font-weight: 300;
+    background-color:transparent !important;
+
+}
+.input-group button{
+    border: 1px solid #fff !important;
+    background-color: rgb(255, 255, 255);
+    color: #2874f0 !important;
+    box-shadow: #fff;
+}
+.input-group input{
+    border: 1px solid #fff !important;
+}
+.input-group button:hover{
+    background-color: white;
+}
+.navbar {  border: none!important; }
+
+.fcolor{
+    color: #2874f0;
+  }
+
+.fcolor:hover{
+    color: #2874f0;
+  }
+.font{
+    font-family: Roboto,Arial,sans-serif;
+}
+.searchbar{
+    width: 600px; height: 36px;
+    margin:1% 3.5%;
+}
+body{
+    margin: 0;
+    
+   
+}
+/*body { padding-top: 70px; }*/
+.loginbtn{
+    font-size: 16px;font-weight: 600;
+    height: 36px;
+    width: 120px;
+    text-align: center;
+    border-radius: 1%;
+    padding-bottom: 10px;
+    margin: 4px 0px;
+}
+.nav2 a{
+padding: 0% 10px;
+text-decoration: none;
+text-align: center;
+color: black;
+}
+ .col div p{
+    display: block;
+    text-decoration: none;
+    color: #000;
+    font-weight: 500;
+    font-size: 14px;
+
+}
+ .col div p:hover{
+    color:#2874f0;
+}
+.col a{
+    text-decoration: none;
+}
+  .item img {
+      position: absolute;
+      top: 0;
+      left: 0;
+      min-height: 300px;
+  }
+
+.info1{
+  padding: 0;
+}
+
+.boxfont {
+  font-size: 21px;
+  line-height: 32px;
+  font-weight: 500;
+}
+.boxtext1{
+  font-size: 14px;
+  color: #000;
+  font-weight:bold;
+  margin-top: 15px;
+  font-family: Roboto,Arial,sans-serif;
+  text-align: center;
+  display: block;
+}
+.boxtext2 {
+  color: rgb(56, 142, 60);
+  padding-top: 8px;
+  text-align: center;
+  display: block;
+}
+.boxtext3 {
+  opacity: 0.6;
+  padding-top: 7px;
+  text-align: center;
+  display: block;
+}
+.zoom:hover {
+  transform: scale(1.07);
+}
+.zoom {
+  transition: transform .2s; /* Animation */
+}
+.imgdiv {
+  height: 150px;
+  width: 150px;
+}
+.fboxcolor{
+  color: #ffffff;
+}
+.fboxcolor:hover{
+  color: #ffffff;
+  background-color: #2874f0;
+}
+.boxbtn{
+  font-size: 14px;font-weight: 500;
+  height: 36px;
+  width: 110px;
+  text-align: center;
+  border-radius: 1%;
+  padding-bottom: 10px;
+  margin: 4px 0px;
+  background-color: #2874f0;
+}
+
+.foothead1{
+  color: #878787;
+font-size: 14px;
+font-weight: 500;
+}
+.foothead2
+{
+  padding: 0;
+  line-height: 1.5;
+  font-size: 14px;
+}
+
+.footlinks a{
+  text-decoration: none;
+  color: white;
+}
+.footlinks li a:hover {
+  text-decoration: underline;
+  color: white;
+}
+.cartimage {
+  height: 162px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+.cartfont1{
+  text-align: center;
+  display: block;
+  font-size: 18px;
+  margin-top: 24px;
+  font-weight: 500;
+  margin-bottom: 0%;
+}
+.cartfont2{
+  text-align: center;
+  display: block;
+  font-size: 12px;
+  margin-top: 10px;
+  line-height: 1.4;
+}
+.cartfonthead{
+  font-size: 18px;
+  line-height: 56px;
+  padding: 0 24px;
+  font-weight: 500;
+}
+.cartlogin button{
+  font-size: 14px;
+  font-weight: 500;
+  padding: 12px 72px;
+  text-align: center;
+  border-radius: 2%;
+  background-color: #fb641b;
+  color: white;
+}
+
+.cartlogin .btn:hover {
+  color: white;
+}
+
+.cartfooter div{
+  color: #4e4e4e;
+  font-weight: 400;
+  line-height: 31px;
+  font-size: 15px;
+}
+
+.logincontainer{
+  margin: 2% 19% ;
+  display: block;
+  overflow: hidden;
+
+}
+.loginbox{
+background-color: #2874f0;
+color: #fff;
+padding: 40px 33px;
+font-size: 15px;
+width: 40%;
+}
+
+.loginhead{
+  font-size: 28px;
+  font-weight: 500;
+}
+.loginpara{
+  font-size: 18px;
+  margin-top: 16px;
+  line-height: 150%;
+  color: #dbdbdb;
+  }
+.lgbg{
+  background-image: url(https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/login_img_c4a81e.png);
+  background-position: center 85%;
+  background-repeat: no-repeat;
+  margin: 0%;
+}
+.loginbox1{
+  width: 60%;
+  float: right;
+  padding: 56px 35px 16px;
+  display: block;
+  overflow: hidden;
+}
+.form-floating label{
+  color: #878787;
+  font-size: 16px;
+}
+.form-floating input{
+  border: none;
+  border-bottom:2px solid #f2f2f2;
+  border-radius: 0%;
+}
+
+.loginbox2 {
+  color: #878787;
+  font-size: 12px;
+  font-weight: 400;
+}
+#loginbtnl{
+    background: #fb641b;
+    border: none;
+    color: #fff;
+    border-radius: 1%;
+    height: 48px;
+}
+#requestbtnl{
+  border: none;
+  border-radius: 1%;
+  line-height: 180%;
+  text-align: center;
+  color: #2874f0;
+  background-color: #fff;
+  margin-top: 16px;
+  height: 48px;
+}
+.register {
+  margin-top: 18%;
+  text-align: center;
+}
+.fcolor1{
+  color: #5dbc71;
+}
+.fcolor1:hover{
+  color: #5dbc71;
+}
+.carousel-inner .carousel-item {
+
+  transition: transform 1s;
+
+}
+
+

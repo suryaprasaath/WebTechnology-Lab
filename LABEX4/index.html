@@ -1,0 +1,492 @@
+<html>
+    <head>
+        <title>Online Shopping Site for Electronics and many more</title>
+        <link rel="shortcut icon" href="img/shorticon.png">
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+        
+    </head>
+    <body>
+
+
+      <!-- nav  bar-->
+      <nav class="navbar navbar-expand-md navbar-dark bg-dark">
+        <div class="container">
+          <a class="navbar-brand" href="index.html"><img src="img/logo.png" alt="logo"></a>
+          <div class="input-group mb-3 searchbar">
+            <input type="text" class="form-control shadow-none" placeholder="Search for products, brands and more" aria-label="Products" aria-describedby="button-addon2">
+            <button class="btn btn-outline-secondary shadow-none" type="button" id="button-addon2"><i class="fa fa-search"></i></button>
+          </div>
+          <a href="login.html"><button type="button" class="btn btn-light shadow-none mx-2 fcolor font loginbtn" >Login</button></a>
+          <div class="collapse navbar-collapse font" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto  mb-lg-0">
+            <li class="nav-item dropdown">
+              <a class="nav-link dropdown-toggle  mx-2 " href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                More
+              </a>
+              <ul class="dropdown-menu py-0" aria-labelledby="navbarDropdown" >
+                <li class="my-2"><a class="dropdown-item" href="#">Notification Preferences</a></li>
+                <li><hr class="dropdown-divider m-0"></li>
+                <li><a class="dropdown-item my-2" href="#">Sell on Flipkart</a></li>
+                <li><hr class="dropdown-divider m-0"></li>
+                <li><a class="dropdown-item my-2" href="#">24x7 Customer Care</a></li>
+                <li><hr class="dropdown-divider m-0"></li>
+                <li><a class="dropdown-item my-2" href="#">Advertise</a></li>
+                <li><hr class="dropdown-divider m-0"></li>
+                <li><a class="dropdown-item my-2" href="#">Download App</a></li>
+              </ul>
+            </li>
+            <li class="nav-item  mx-2">
+              <a class="nav-link" aria-current="page" href="cart.html"><i class="fa fa-shopping-cart"></i>&ensp;Cart</a>
+            </li>
+          </ul>
+          </div>
+        </div>
+      </nav>
+
+
+      <!--nav bar2 -->
+      <div class="container-fluid ">
+      <div class="container">
+        <div class="row py-1">
+          <div class="col nav22">
+            <a href="#deals"><img alt="Top Offers" src="https://rukminim1.flixcart.com/flap/128/128/image/f15c02bfeb02d15d.png?q=100" style="height: 64px; width: 64px;"><div><p>Top Offers</p></div></a>
+          </div>
+          <div class="col">
+            <a href="mobile.html"><img alt="Mobiles" src="https://rukminim1.flixcart.com/flap/128/128/image/22fddf3c7da4c4f4.png?q=100" style="height: 64px; width: 64px;"><div><p>Mobiles</p></div></a>
+          </div>
+          <div class="col">
+            <a href="grocery.html"><img alt="Grocery" src="https://rukminim1.flixcart.com/flap/128/128/image/29327f40e9c4d26b.png?q=100" style="height: 64px; width: 64px;"><div><p>Grocery</p></div></a>
+          </div>
+          <div class="col">
+            <a href="#electronics"><img alt="Electronics" src="https://rukminim1.flixcart.com/flap/128/128/image/69c6589653afdb9a.png?q=100" style="height: 64px; width: 64px;"><div><p>Electronics</p></div></a>
+          </div>
+          <div class="col">  
+            <a href="#fashion"><img alt="Fashion" src="https://rukminim1.flixcart.com/flap/128/128/image/82b3ca5fb2301045.png?q=100" style="height: 64px; width: 64px;"><div><p>Fashion</p></div>
+            </a></div>
+          <div class="col">
+            <a href="#appliance"><img alt="Appliance" src="https://rukminim1.flixcart.com/flap/128/128/image/0ff199d1bd27eb98.png?q=100" style="height: 64px; width: 64px;"><div><p>Appliance</p></div></a>
+          </div>
+          <div class="col">
+            <a href="#"><img alt="Home" src="https://rukminim1.flixcart.com/flap/128/128/image/ab7e2b022a4587dd.jpg?q=100" style="height: 64px; width: 64px;"><div><p>Home</p></div></a>
+          </div>
+        </div>
+      </div>  
+    </div> 
+
+
+      <!--bgcolor-->
+      <div style="background-color: #f0f1f4; overflow: hidden; height: auto;" >
+
+     <!--Slideshow-->
+      <div id="carouselControls" class="carousel my-3 mx-2 " data-bs-ride="carousel">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <img src="img/slide1.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="img/slide2.jpg" class="d-block w-100" >
+          </div>
+          <div class="carousel-item">
+            <img src="https://rukminim1.flixcart.com/flap/1688/280/image/8696c8300bfef070.jpg?q=50" class="d-block w-100" alt="...">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselControls" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselControls" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+
+     <!--box1-->
+      <div class="my-2 mx-2" style="background-color: white; display: block;" id="deals">
+        <div class="info1 container-fluid mx-2 boxfont px-3 py-3">Deals Of the Day<div style="float: right;"><a href="#"><button type="button" class="btn shadow-none mx-2 fboxcolor font boxbtn" >VIEW ALL</button></a></div></div>
+        <hr class="m-0">
+        <div class="row" >
+          <div class="col mx-3 my-3 p-0 ">
+            <div class="imgdiv"><a href="#"><img alt="shoe" class="zoom pt-4" src="https://rukminim1.flixcart.com/image/150/150/kfpq5jk0-0/shoe/d/p/r/2531940079-6-u-s-polo-assn-navy-original-imafw4f6xugyzfrm.jpeg?q=70"></a></div>
+            <div class="boxtext1">WROGN, UCB, USPA...</div>
+            <div class="boxtext2">Extra 10%off</div>
+            <div class="boxtext3">Fashion</div>
+          </div>
+          <div class="col mx-3 my-3 p-0">
+            <div class="imgdiv"> <a href="#"><img alt="hanger" class="zoom" src="https://rukminim1.flixcart.com/image/200/200/jjn6d8w0/hanger/r/z/t/denimation-happy-to-hang-original-imaf76bzmqz5hrft.jpeg?q=70"></a></div>
+            <div class="boxtext1">Home Utility Range</div>
+            <div class="boxtext2">From ₹99</div>
+            <div class="boxtext3">Best Selling</div>
+          </div>
+          <div class="col mx-3 my-3 p-0">
+            <div class="imgdiv"> <a href="#"><img alt="clothing" class="zoom px-3" src="https://rukminim1.flixcart.com/image/150/150/kj8wccw0-0/t-shirt/f/v/c/m-m7aw20cn012a-m7-by-metronaut-original-imafyuywkdh6evxh.jpeg?q=70"></a></div>
+            <div class="boxtext1">Best Of Brands</div>
+            <div class="boxtext2">From ₹299</div>
+            <div class="boxtext3">Mens Clothing</div>
+          </div>
+          <div class="col mx-3 my-3 p-0">
+            <div class="imgdiv">  <a href="#"><img alt="backpacks" class="zoom px-4" src="https://rukminim1.flixcart.com/image/150/150/k5lcvbk0/backpack/z/t/s/boho-with-rain-cover-blue-casual-backpack-23l-bpboh1rblu-original-imafz8f66gvawsgf.jpeg?q=70"></a></div>
+            <div class="boxtext1">Backpacks</div>
+            <div class="boxtext2">Under ₹899</div>
+            <div class="boxtext3">Top offers</div>
+          </div>
+          <div class="col mx-3 my-3 p-0">
+            <div class="imgdiv">  <a href="#"><img alt="makeup" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/jqwny4w0/kajal/c/v/q/0-7-eyeconic-kajal-twin-pack-lakme-original-imafcthtdzhzpdjg.jpeg?q=70"></a></div>
+            <div class="boxtext1">Makeup BestSeller</div>
+            <div class="boxtext2">Under ₹199+Extra 20%</div>
+            <div class="boxtext3">Lakme, Maybelline..</div>
+          </div>
+          <div class="col mx-3 my-3 p-0">
+            <div class="imgdiv">  <a href="#"><img alt="glass" class="zoom py-5" src="https://rukminim1.flixcart.com/image/150/150/jialea80/frame/c/d/u/53-0rx7143200053-ray-ban-original-imaf64b9rzss3zju.jpeg?q=70"></a></div>
+            <div class="boxtext1">Ray-Ban, Fastrack..</div>
+            <div class="boxtext2">20-60% Off</div>
+            <div class="boxtext3">Frames</div>
+          </div>
+          <div class="col mx-3 my-3 p-0">
+            <div class="imgdiv"><a href="#"><img alt="watch" class="zoom px-3" src="https://rukminim1.flixcart.com/image/150/150/j8rnpu80/watch/d/5/y/b172-casio-original-imaeymgrxhfmnw6f.jpeg?q=70"></a></div>
+            <div class="boxtext1">Casio, Fastrack..</div>
+            <div class="boxtext2">Extra 20%off</div>
+            <div class="boxtext3">Watches</div>
+          </div>
+        </div>
+      </div>
+
+
+
+
+<!--box2-->
+<div class="my-2 mx-2" style="background-color: white; display: block;" id="electronics">
+  <div class="info1 container-fluid mx-2 boxfont px-3 py-3">Best of Electronics<div style="float: right;"><a href="#"><button type="button" class="btn shadow-none mx-2 fboxcolor font boxbtn" >VIEW ALL</button></a></div></div>
+  <hr class="m-0">
+  <div class="row" >
+    <div class="col mx-3 my-3 p-0 ">
+      <div class="imgdiv"><a href="#"><img alt="phone" class="zoom px-3" src="https://rukminim1.flixcart.com/image/150/150/kfyasnk0/cases-covers/back-cover/h/c/n/spigen-acs00990-original-imafwa9ua6fkgxjq.jpeg?q=70"></a></div>
+      <div class="boxtext1">Best Brands</div>
+      <div class="boxtext2">Shop Now</div>
+      <div class="boxtext3">For All Phone Models</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="#"><img alt="lenovo" class="zoom" src="https://rukminim1.flixcart.com/image/150/150/jrjizrk0/tablet/g/f/a/lenovo-d330-10igm-original-imafdbhndgzhhtzt.jpeg?q=70"></a></div>
+      <div class="boxtext1">Lenovo Ideapad</div>
+      <div class="boxtext2">Just ₹22,500</div>
+      <div class="boxtext3">Keyboard | 25.65 cm</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="#"><img alt="Speakers" class="zoom pt-3" src="https://rukminim1.flixcart.com/image/150/150/k5vcya80pkrrdj/speaker/laptop-desktop-speaker/c/t/z/zebronics-fame-2-0-channel-original-imafkjb9pesgmyzw.jpeg?q=70"></a></div>
+      <div class="boxtext1">Laptop Speakers</div>
+      <div class="boxtext2">From ₹599</div>
+      <div class="boxtext3">Zebronics,F&amp;D </div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="router" class="zoom px-4" src="https://rukminim1.flixcart.com/image/150/150/k6mibgw0/datacard/r/h/g/jiofi-jmr-541-original-imafpfhandhkptwc.jpeg?q=70"></a></div>
+      <div class="boxtext1">Data Cards</div>
+      <div class="boxtext2">Upto 60% off</div>
+      <div class="boxtext3">JioFi, Huawei &amp; more</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="camera" class="zoom " src="https://rukminim1.flixcart.com/image/150/150/jh0vb0w0/dslr-camera/u/t/g/eos-m50-canon-original-imaf54t3aqfb6rpf.jpeg?q=70"></a></div>
+      <div class="boxtext1">Vlogging Cameras</div>
+      <div class="boxtext2">From </div>
+      <div class="boxtext3">Lakme, Maybelline..</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="Cover" class="zoom " src="https://rukminim1.flixcart.com/flap/150/150/image/376cffdc673dfbcd.jpg?q=70"></a></div>
+      <div class="boxtext1">Designer Covers</div>
+      <div class="boxtext2">Under ₹299</div>
+      <div class="boxtext3">For Redmi note 8</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"><a href="#"><img alt="webcam" class="zoom " src="https://rukminim1.flixcart.com/image/150/150/ja73ki80/webcam/pc-webcam/7/q/e/logitech-c310-original-imaeztzqny7jh7gh.jpeg?q=70"></a></div>
+      <div class="boxtext1">Webcam</div>
+      <div class="boxtext2">Extra 15%off</div>
+      <div class="boxtext3">Logitect,Quantum</div>
+    </div>
+  </div>
+</div>
+
+<!--box3-->
+<div class="my-2 mx-2" style="background-color: white; display: block;" id="appliance">
+  <div class="info1 container-fluid mx-2 boxfont px-3 py-3">Best Of Appliance<div style="float: right;"><a href="#"><button type="button" class="btn shadow-none mx-2 fboxcolor font boxbtn" >VIEW ALL</button></a></div></div>
+  <hr class="m-0">
+  <div class="row" >
+    <div class="col mx-3 my-3 p-0 ">
+      <div class="imgdiv"><a href="#"><img alt="TV" class="zoom pt-4" src="https://rukminim1.flixcart.com/image/150/150/kqse07k0/television/c/0/r/qa65q60aaklxl-samsung-original-imag4qf6mvjszgkd.jpeg?q=70"></a></div>
+      <div class="boxtext1">8K UHD | QLED TVs</div>
+      <div class="boxtext2">Upto 15%off</div>
+      <div class="boxtext3">Samsung, Compaq..</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="#"><img alt="Landphone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/jumzc7k0/landline-phone/s/j/w/ss-1500-silver-grey-sonics-original-imaffnks5caszzjs.jpeg?q=70"></a></div>
+      <div class="boxtext1">Landline Phones</div>
+      <div class="boxtext2">From ₹499</div>
+      <div class="boxtext3">Beetel, Motorola..</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="#"><img alt="Fan" class="zoom py-5" src="https://rukminim1.flixcart.com/image/150/150/fan/a/z/f/havells-leganza-4blade-original-imadxxczv6vmj2mz.jpeg?q=70"></a></div>
+      <div class="boxtext1">Fans</div>
+      <div class="boxtext2">Minimum 33%off</div>
+      <div class="boxtext3">Four Star & more</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="kettle" class="zoom px-4" src="https://rukminim1.flixcart.com/image/150/150/k5vcya80pkrrdj/electric-kettle-refurbished/g/g/w/u-16052-1-8-kent-original-imafmuj5n58zzpbm.jpeg?q=70"></a></div>
+      <div class="boxtext1">Kent Electric Kettles</div>
+      <div class="boxtext2">Upto 25%off</div>
+      <div class="boxtext3">Best Selling</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="egg-cooker" class="zoom pt-2" src="https://rukminim1.flixcart.com/image/150/150/jcjejrk0/egg-cooker/w/c/x/16020-kent-original-imaffn6mkqnhhz6w.jpeg?q=70"></a></div>
+      <div class="boxtext1">Egg Cooker</div>
+      <div class="boxtext2">Extra 60%</div>
+      <div class="boxtext3">Best Discount</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="fridge" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/kl2mljk0/refrigerator-new/m/i/v/rr19a241bgs-nl-2-2021-samsung-original-imagy9pyfszpmgwm.jpeg?q=70"></a></div>
+      <div class="boxtext1">Single Door Fridge</div>
+      <div class="boxtext2">From ₹5900</div>
+      <div class="boxtext3">Samsung,whirlpool</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"><a href="#"><img alt="toaster" class="zoom pt-3" src="https://rukminim1.flixcart.com/image/150/150/jjkbhjk0/sandwich-maker/5/q/g/nova-2-slice-sandwich-maker-original-imaf74a8zrqzfgug.jpeg?q=70"></a></div>
+      <div class="boxtext1">Sandwich maker</div>
+      <div class="boxtext2">Extra 20%off</div>
+      <div class="boxtext3">Prestige, Nova &amp; more</div>
+    </div>
+  </div>
+</div>
+
+<!--box4-->
+<div class="my-2 mx-2" style="background-color: white; display: block;" id="fashion">
+  <div class="info1 container-fluid mx-2 boxfont px-3 py-3">Fashion For Everyone<div style="float: right;"><a href="#"><button type="button" class="btn shadow-none mx-2 fboxcolor font boxbtn" >VIEW ALL</button></a></div></div>
+  <hr class="m-0">
+  <div class="row" >
+    <div class="col mx-3 my-3 p-0 ">
+      <div class="imgdiv"><a href="#"><img alt="jackets" class="zoom px-4" src="https://rukminim1.flixcart.com/image/150/150/jvsf3ww0/jacket/g/z/z/l-1826111-invictus-original-imafghx9m4b7nqyz.jpeg?q=70"></a></div>
+      <div class="boxtext1">Roadster, HRX, Wrogn...</div>
+      <div class="boxtext2">Min. 60% Off</div>
+      <div class="boxtext3">T-Shirts, Jeans..</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="#"><img alt="shoes" class="zoom px-4" src="https://rukminim1.flixcart.com/image/150/150/k23m4cw0/shoe/z/d/z/10223305-38-roadster-blue-original-imafhga77c5nygcn.jpeg?q=70"></a></div>
+      <div class="boxtext1">Roadster</div>
+      <div class="boxtext2">40-60off</div>
+      <div class="boxtext3">Sneakers, heals & more</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="#"><img alt="sandles" class="zoom px-2" src="https://rukminim1.flixcart.com/flap/150/150/image/fee02f6f97d3b66b.jpg?q=70"></a></div>
+      <div class="boxtext1">Metro, Carlton London</div>
+      <div class="boxtext2">From ₹999</div>
+      <div class="boxtext3">Deals like never before!</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="cargos" class="zoom px-2" src="https://rukminim1.flixcart.com/flap/150/150/image/57b64c251e5af10e.jpg?q=70"></a></div>
+      <div class="boxtext1">Cool Cargos</div>
+      <div class="boxtext2">Under ₹899</div>
+      <div class="boxtext3">Grap or Gone!</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="jacket2" class="zoom px-3" src="https://rukminim1.flixcart.com/image/150/150/k26h0280/jacket/j/b/a/m-hljk000297-highlander-original-imafhhbqevhdastj.jpeg?q=70"></a></div>
+      <div class="boxtext1">Denim Jackets</div>
+      <div class="boxtext2">Upto 10%off</div>
+      <div class="boxtext3">Must Haves!</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="#"><img alt="glass" class="zoom py-5" src="https://rukminim1.flixcart.com/image/150/150/k070zgw0/sunglass/w/p/z/free-size-sg-45-eyevy-original-imafh5jbtv4np5gz.jpeg?q=70"></a></div>
+      <div class="boxtext1">Evevy</div>
+      <div class="boxtext2">From ₹399</div>
+      <div class="boxtext3">Men & Women Sunglasses</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"><a href="#"><img alt="jewellery" class="zoom " src="https://rukminim1.flixcart.com/image/150/150/jixgfww0/necklace-chain/q/u/s/ycchnk-23-gl-necklace-chemistry-original-imaf6mbbf7hjys43.jpeg?q=70"></a></div>
+      <div class="boxtext1">jewellery</div>
+      <div class="boxtext2">Upto 20%off</div>
+      <div class="boxtext3">Fashion jewellery</div>
+    </div>
+  </div>
+</div>
+
+
+
+
+<!--box5-->
+<div class="my-2 mx-2" style="background-color: white; display: block;">
+  <div class="info1 container-fluid mx-2 boxfont px-3 py-3">Best Battery Phones<div style="float: right;"><a href="mobile.html"><button type="button" class="btn shadow-none mx-2 fboxcolor font boxbtn" >VIEW ALL</button></a></div></div>
+  <hr class="m-0">
+  <div class="row " >
+    <div class="col mx-3 my-3 p-0 ">
+      <div class="imgdiv"><a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/kavefm80/mobile/6/y/t/samsung-galaxy-m11-sm-m115fzkeins-original-imafscjyhxwghgwf.jpeg?q=70"></a></div>
+      <div class="boxtext1">SAMSUNG Galaxy M11 (Black, 32 GB)</div>
+      <div class="boxtext2">5000 mAh Battery</div>
+      <div class="boxtext3">Now ₹11989</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/k79dd3k0/mobile/t/k/v/oppo-reno3-pro-cph2035-original-imafpj4fpqp3zpq3.jpeg?q=70"></a></div>
+      <div class="boxtext1">OPPO Reno3 Pro (Sky White, 128 GB)</div>
+      <div class="boxtext2">4700 mAh Battery</div>
+      <div class="boxtext3">Now ₹24867</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"> <a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/kcm9t3k0/mobile/p/p/q/vivo-x50-pro-vivo-2006-original-imaftppahwbc6myx.jpeg?q=70"></a></div>
+      <div class="boxtext1">vivo X50 Pro (Alpha Grey, 256 GB)</div>
+      <div class="boxtext2">4315 mAh Battery</div>
+      <div class="boxtext3">Now ₹49990</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/kavefm80/mobile/d/f/a/samsung-galaxy-m01-sm-m015gzbdins-original-imafscggmdqgt62q.jpeg?q=70"></a></div>
+      <div class="boxtext1">SAMSUNG Galaxy M01 (Blue, 32 GB)</div>
+      <div class="boxtext2">4000 mAh Battery</div>
+      <div class="boxtext3">Now ₹9990</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/kbi9h8w0/mobile/g/g/c/samsung-galaxy-a21s-sm-a217fzkfins-original-imafsuyajewgnfcg.jpeg?q=70"></a></div>
+      <div class="boxtext1">SAMSUNG Galaxy A21s (Black, 64 GB)</div>
+      <div class="boxtext2">5000 mAh Battery</div>
+      <div class="boxtext3">Now ₹17990</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv">  <a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/k51cpe80pkrrdj/mobile/z/y/h/oppo-a9-2020-cph1937-original-imafkhhxh2vsxnmq.jpeg?q=70"></a></div>
+      <div class="boxtext1">OPPO A9 2020 (Marine Green, 128 GB)</div>
+      <div class="boxtext2">5000 mAh Battery</div>
+      <div class="boxtext3">Now ₹14990</div>
+    </div>
+    <div class="col mx-3 my-3 p-0">
+      <div class="imgdiv"><a href="mobile.html"><img alt="phone" class="zoom px-5" src="https://rukminim1.flixcart.com/image/150/150/k9stjm80/mobile/g/z/n/vivo-v19-vivo-1933-pd1969f-ex-original-imafrgnzzumcn2zw.jpeg?q=70"></a></div>
+      <div class="boxtext1">vivo V19 (Mystic Silver, 128 GB)</div>
+      <div class="boxtext2">4500 mAh Battery</div>
+      <div class="boxtext3">Now ₹24990</div>
+    </div>
+  </div>
+</div>
+
+
+    </div><!--End og content-->
+
+
+<!--Footer-->
+<footer class=" text-white text-center text-lg-start" >
+  <div class="container-fluid p-4"style="background-color: #172337;">
+    <div class="row">
+
+      <div class="col-md-2 mb-4 mb-md-0 px-4">
+        <p class="text-uppercase foothead1">ABOUT</p>
+
+        <ul class="list-unstyled mb-0 footlinks">
+          <li>
+            <a href="#!" class="text-white">Contact Us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">About Us</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Careers</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Flipkart Stories</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Press</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Wholesale</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Corporate</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Information</a>
+          </li>
+        </ul>
+      </div>
+
+
+      <div class="col-md-2  mb-4 mb-md-0">
+        <p class="text-uppercase foothead1">HELP</p>
+
+        <ul class="list-unstyled footlinks">
+          <li>
+            <a href="#!" class="text-white ">Payments</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white ">Shipping</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white ">Returns</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Report</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white ">Infringement</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">Cancellation</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white">FAQ</a>
+          </li>
+        </ul>
+      </div>
+
+      <div class="col-md-2  mb-4 mb-md-0">
+        <p class="text-uppercase foothead1">Social</p>
+
+        <ul class="list-unstyled footlinks">
+          <li>
+            <a href="#!" class="text-white ">Facebook</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white ">Twitter</a>
+          </li>
+          <li>
+            <a href="#!" class="text-white ">Youtube</a>
+          </li>
+        </ul>
+      </div>
+
+      
+
+  
+            <div class="col-md-3 mb-4 mb-md-0">
+              <p class="text-uppercase foothead1">Mail us:</p>
+      
+              <p class="foothead2">
+                Flipkart Internet Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India<br>
+              </p>
+            </div>
+
+            <div class="col-md-3 mb-4 mb-md-0">
+              <p class="text-uppercase foothead1">Registered Office Address:</p>
+              <p class="foothead2">
+                Flipkart Internet Private Limited,<br>
+                Buildings Alyssa, Begonia &<br>
+                Clove Embassy Tech Village,<br>
+                Outer Ring Road, Devarabeesanahalli Village,<br>
+                Bengaluru, 560103,<br>
+                Karnataka, India<br>
+                CIN : U51109KA2012PTC066107<br>
+                Telephone: <span style="color: #3583ff;"> 1800 202 9898</span><br>
+              </p>
+            </div>  
+
+    </div>
+  </div>
+
+  <hr class="m-0">
+  <div class="text-center p-3" style="background-color: #172337;">
+    © 2007-2021 Copyright:
+    <a class="text-white" style="text-decoration: none;" href="">Flipkart.com</a>
+    <img style="float:right;" src="https://static-assets-web.flixcart.com/www/linchpin/fk-cp-zion/img/payment-method_69e7ec.svg">
+  </div>
+</footer>
+
+
+
+
+      <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj" crossorigin="anonymous"></script>
+    </body>
+</html>
