@@ -1,0 +1,222 @@
+<html>
+    <head>
+        <title>TANGEDCO Bill Calculator</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We" crossorigin="anonymous">
+        <link rel="stylesheet" type="text/css" href="style.css">      
+    </head>
+    <body>
+        <div id="head">
+            <img src="img/logo.png" alt="logo">
+        </div>
+        <div id="table">
+            <div class="container-fluid p-0">
+                <div id="table_head">
+                    <p>Bill Calculator</p>
+                </div>  
+                <form method="get" name="calcform">
+                <div id="content">
+                    <table>
+                        <tr>
+                            <td>Tariff Check</td>
+                            <td>
+                                <select id="type" required>
+                                    <option value="">  Select the Tariff   </option>
+                                    <option value="COMMERCIAL">COMMERCIAL</option>
+                                    <option value="DOMESTIC">DOMESTIC</option>
+                                </select>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td id="unit2">Contracted load(Not required for 'Domestic tariff')</td>
+                            <td><input type="text" id="load"  name="load"></td>
+                        </tr>
+                        <tr>
+                            <td>Consumed Units</td>
+                            <td><input type="text" id="unit" name="unit" pattern="[0-9]{.5}" title="Only Number allowed" required></td>
+                        </tr>
+                    </table>
+                </div>
+                <div id="button">
+                    <input type="button" value="Calculate" onClick="calculate()" style="background-color: rgb(74, 74, 252) ; color: white;padding: 3px 20px; border-radius: 4%;">
+                </div>
+                <div id="content">
+                   <table>
+                        <tr>
+                            <td>Consumed Units:</td>
+                            <td><input type="text"  name="cunit" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Total Current Charges Rs.</td>
+                            <td><input type="text"  name="charge" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>CC Subsidy Rs.(-)</td>
+                            <td><input type="text"  name="ccsub" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Net Current Charges Rs.</td>
+                            <td><input type="text"  name="netcharge" readonly></td>
+                        </tr>
+                        <tr>
+                            <td id="unit2">Fixed Cost Rs.(+)</td>
+                            <td><input type="text"  name="fixed" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Subsidy Fixed Cost Rs.(-)</td>
+                            <td><input type="text"  name="fixedcost" readonly></td>
+                        </tr>
+                        <tr>
+                            <td id="com">CC New Subsidy (100 units) Rs.(-)</td>
+                            <td><input type="text" name="newsub" readonly></td>
+                        </tr>
+                        <tr>
+                            <td>Net Amount Rs.</td>
+                            <td><input type="text" name="netamt" readonly></td>
+                        </tr>
+                    </table>
+                </div>
+            </form>
+            <div id="footer">
+                <span>Copyright © 2013. Tamil Nadu Generation and Distribution Corporation Limited</span>
+            </div>
+          </div>
+        </div>
+        <script>
+            function calculate()
+             {
+                type=document.getElementById("type").value;
+                load=document.getElementById("load").value;
+                unit=document.getElementById("unit").value;
+               if (type=="COMMERCIAL")
+               {
+                if (unit>0 && unit<=100)
+				{
+                var x3 = unit*1;
+				document.calcform.cunit.value = x3.toFixed(1);
+				var x1 = unit*5;
+				document.calcform.charge.value = x1.toFixed(4);
+                var x6 = 0;
+                document.calcform.ccsub.value = x6.toFixed(1);
+                var x7 = x1-x6;
+                document.calcform.netcharge.value = x7.toFixed(4);
+				var x4 = load*140;			
+				document.calcform.fixed.value = x4.toFixed(1);
+                var x8 = 0;
+				document.calcform.fixedcost.value = x8.toFixed(1);
+                document.getElementById("com").innerHTML = 'E.Tax Rs.';
+				var x2 = (x1*0.05);
+				document.calcform.newsub.value = x2.toFixed(1);
+				var x0 = x1+x4+x2;
+				document.calcform.netamt.value = Math.ceil(x0).toFixed(2);	
+				}
+				if (unit>=101)
+				{
+                var x3 = unit*1;var x5 = unit*0.1;
+				document.calcform.cunit.value = x3.toFixed(1);
+				var x1 = unit*8.05;
+				document.calcform.charge.value = x1.toFixed(4);
+                var x6 = 0;
+                document.calcform.ccsub.value = x6.toFixed(1);
+                var x7 = x1-x6;
+                document.calcform.netcharge.value = x7.toFixed(4);
+				var x4 = load*140;			
+				document.calcform.fixed.value = x4.toFixed(1);
+                var x8 = 0;
+				document.calcform.fixedcost.value = x8.toFixed(1);
+                document.getElementById("com").innerHTML = 'E.Tax Rs.';
+				var x2 = (x1*0.05);
+				document.calcform.newsub.value = x2.toFixed(1);
+				var x0 = x1+x4+x2;
+				document.calcform.netamt.value = Math.ceil(x0).toFixed(2);	
+				}
+               }
+               if (type=="DOMESTIC")
+               {
+                if (unit>0 && unit<=100)
+				{
+                var x3 = unit*1;
+				document.calcform.cunit.value = x3.toFixed(1);
+				var x1 =  unit*2.5;
+				document.calcform.charge.value = x1.toFixed(1);
+                var x6 = 0;
+                document.calcform.ccsub.value = x6.toFixed(1);
+                var x7 = x1-x6;
+                document.calcform.netcharge.value = x7.toFixed(1);
+				var x4 = 30;			
+				document.calcform.fixed.value = x4.toFixed(1);
+                var x8 = 0;
+				document.calcform.fixedcost.value = x8.toFixed(1);
+				var x2 = 0;
+				document.calcform.newsub.value = x2.toFixed(1);
+				//var x0 = Math.ceil(x1+x4-x2-x6-x8);
+                var x0 = 0;
+				document.calcform.netamt.value = x0.toFixed(1);
+				}
+				if (unit>=101 && unit<=200)
+				{
+                var x3 = unit*1;
+				document.calcform.cunit.value = x3.toFixed(1);
+				var x1 =  (unit-100)*1.5;
+                var x12=x1+250;
+				document.calcform.charge.value = x12.toFixed(1);
+                var x6 = 50;
+                document.calcform.ccsub.value = x6.toFixed(1);
+                var x7 = x12-x6;
+                document.calcform.netcharge.value = Math.abs(x7).toFixed(1);
+				var x4 = 30;			
+				document.calcform.fixed.value = x4.toFixed(1);
+                var x8 = 10;
+				document.calcform.fixedcost.value = x8.toFixed(1);
+				var x2 = 250;
+				document.calcform.newsub.value = x2.toFixed(1);
+				var x0 = Math.ceil(x1+x4-x8);
+                var x11=Math.abs(x0);
+				document.calcform.netamt.value = x11.toFixed(1);
+				
+				}
+											
+				if (unit>=201 && unit<=500)
+				{
+                var x3 = unit*1;
+				document.calcform.cunit.value = x3.toFixed(1);
+				var x1 = (unit-200)*3 + 500;
+				document.calcform.charge.value = x1.toFixed(1);
+                var x6 = 50;
+                document.calcform.ccsub.value = x6.toFixed(1);
+                var x7 = x1-x6;
+                document.calcform.netcharge.value = x7.toFixed(1);
+				var x4 = 30;			
+				document.calcform.fixed.value = x4.toFixed(1);
+                var x8 = 0;
+				document.calcform.fixedcost.value = x8.toFixed(1);
+				var x2 = 250 ;
+				document.calcform.newsub.value = x2.toFixed(1);
+				var x0 = Math.ceil(x1+x4-x2-x6-x8);
+				document.calcform.netamt.value = x0.toFixed(1);
+                }
+                										
+				if (unit>500)
+				{
+				var x3 = unit*1;
+				document.calcform.cunit.value = x3.toFixed(1);
+				var x1 = (unit-500)*6.6+1730+250;
+				document.calcform.charge.value = x1.toFixed(1);
+                var x6 = 0;
+                document.calcform.ccsub.value = x6.toFixed(1);
+                var x7 = x1-x6;
+                document.calcform.netcharge.value = x7.toFixed(1);
+				var x4 = 50;			
+				document.calcform.fixed.value = x4.toFixed(1);
+                var x8 = 0;
+				document.calcform.fixedcost.value =  x8.toFixed(1);
+				var x2 = 250 ;
+				document.calcform.newsub.value = x2.toFixed(1);
+				var x0 = Math.ceil(x1+x4-x2-x6-x8);
+				document.calcform.netamt.value = x0.toFixed(1);
+				} 
+               }
+             }
+        </script>  
+    </body>
+</html>
+
